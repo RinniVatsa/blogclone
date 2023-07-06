@@ -22,7 +22,7 @@
 .header h1 {
     font-size: 24px;
     margin: 0;
-    background-color: rgba(183, 136, 70, 0.445);
+    background-color: #d7d9db;
 }
 
 .search-bar {
@@ -158,7 +158,7 @@
 
 .footer {
     padding: 20px;
-    background-color: #f8f9fa;
+    background-color: #d7d9db;
     text-align: center;
     fontsize: 14px;
 }

@@ -88,7 +88,9 @@ const App = () => {
         <
         header className = "header" >
         <
-        h1 > Blog Tour < /h1>{" "} <
+        h1 style = {
+            { color: "blue", justifyContent: 'center', alignItems: 'center', display: 'flex' }
+        } > Blog Tour < /h1>{" "} <
         div className = "search-bar" >
         <
         input type = "text"
@@ -96,15 +98,14 @@ const App = () => {
         value = { searchTerm }
         onChange = { handleSearchChange }
         />{" "} <
-        ul > {
+        ul > { " " } {
             filteredCategories.map((category, index) => ( <
                 li key = { index } > { category } < /li>
             ))
-        } <
-        /ul> <
-        /
+        } { " " } <
+        /ul>{" "} < /
         div > { " " } <
-        /header> <
+        /header>{" "} <
         div className = "content" >
         <
         div className = "main" > { " " } {
@@ -142,7 +143,7 @@ const App = () => {
                 div >
             ))
         } { " " } <
-        /div> <
+        /div>{" "} <
         div className = "sidebar" >
         <
         div className = "card" >
@@ -151,12 +152,12 @@ const App = () => {
             { color: "black" }
         } > Categories < /h2>{" "} <
         ul style = {
-            { color: 'grey' }
+            { color: "grey" }
         } > { " " } {
             categories.map((category) => ( <
                 li key = { category } >
                 <
-                li > { category } < /li> < /
+                li > { category } < /li>{" "} < /
                 li >
             ))
         } { " " } <
@@ -177,11 +178,13 @@ const App = () => {
         /div>{" "} < /
         div > { " " } <
         /div>{" "} < /
-        div > <
+        div > { " " } <
         footer className = "footer" >
         <
-        p > Blog Clone - All rights reserved < /p>{" "} < /
-        footer > <
+        p style = {
+            { color: "blue" }
+        } > Blog Clone - All rights reserved < /p>{" "} < /
+        footer > { " " } <
         button className = { `dark-mode-toggle ${darkMode ? "dark" : ""}` }
         onClick = { toggleDarkMode } > { " " } { darkMode ? "Light Mode" : "Dark Mode" } { " " } <
         /button>{" "} < /
